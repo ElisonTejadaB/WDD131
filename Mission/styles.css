@@ -24,11 +24,11 @@ h2 {
 .list, p {
     text-align: left;
 }
-li,h2 {
-    margin-bottom: 10px; /* Adjust the value as needed */
+li {
+    margin-bottom: 10px;
   }
   li {
-    padding-bottom: 10px; /* Adjust the value as needed */
+    padding-bottom: 10px;
   }
 
 .logo img {
