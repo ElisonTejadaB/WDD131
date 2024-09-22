@@ -1,0 +1,37 @@
+body {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    text-align: center;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+h2 {
+    color: #006EB6;
+    font-size: 20px ;
+}
+
+.Mission, .Statement {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.list, p {
+    text-align: left;
+}
+li,h2 {
+    margin-bottom: 10px; /* Adjust the value as needed */
+  }
+  li {
+    padding-bottom: 10px; /* Adjust the value as needed */
+  }
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
