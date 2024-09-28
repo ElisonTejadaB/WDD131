@@ -18,24 +18,4 @@ newSection.appendChild(newH2);
 const newP = document.createElement("p");
 newP.innerText = "This was added through Javascript";
 newSection.appendChild(newP);
-
-/*  Dark and White Background*/
-
 document.body.appendChild(newSection);
-
-const themeSelector = document.getElementById("theme-selector");
-const logo = document.getElementById("logo");
-
-themeSelector.addEventListener("change", changeTheme);
-
-function changeTheme() {
-    const selectedTheme = themeSelector.value;
-
-    if (selectedTheme === "dark") {
-        document.body.classList.add("dark");
-        logo.src = "white-logo.png";
-    } else {
-        document.body.classList.remove("dark");
-        logo.src = "blue-logo.png";
-    }
-}
