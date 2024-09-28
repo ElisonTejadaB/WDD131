@@ -1,4 +1,4 @@
-
+// Test my code
 const themeSelector = document.getElementById("theme-selector");
     const logo = document.getElementById("logo");
     
