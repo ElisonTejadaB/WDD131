@@ -9,10 +9,10 @@ const themeSelector = document.getElementById("theme-selector");
     
         if (selectedTheme === "dark") {
             document.body.classList.add("dark");
-            logo.src = "/Mission/images/logo_dark.png";  // Ensure correct image path
+            logo.src = "./Mission/images/logo_dark.png";  // Ensure correct image path
         } else {
             document.body.classList.remove("dark");
-            logo.src = "/Mission/images/blue-logo.png";   // Ensure correct image path
+            logo.src = "./Mission/images/blue-logo.png";   // Ensure correct image path
         }
     }
     
