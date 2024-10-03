@@ -1,54 +1,8 @@
-/* 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 body{
-    font-style: "Roboto";
+       font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    
-    background-color: aquamarine;
-    box-sizing: border-box;
-    
-}
-header, main, footer{
-    max-width: 640px;
-    
-    margin: 1rem, auto;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    background-color: #e0f7fa;
-}
-main{
-    display: grid;
-    grid-template-columns: 1fe;
-    grid-gap: 1rem;
-}
-
-section{
-    padding: 10px;
-    background-color: white;
-}
-footer,p{
-    text-align: left;
-}
-
-
-@media screen and (min-width: 500px) {
-    header {
-      background-color: black;
-      color: white;
-    }
-  
-    main {
-      grid-template-columns: 1fr 1fr;
-    }
-} */
-
-body{
-    font-family: "Roboto", sans-serif;
-    margin: 0;
-    padding: 0;
-
-    background-color: aquamarine;
     box-sizing: border-box;
 }
 
@@ -63,7 +17,7 @@ header, main, footer{
 main{
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1rem;
+    gap: 1rem;
 }
 
 section{
