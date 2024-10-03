@@ -28,7 +28,7 @@ section{
 footer,p{
     text-align: left;
 }
-}
+
 
 @media screen and (min-width: 500px) {
     header {
