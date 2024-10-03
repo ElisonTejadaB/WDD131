@@ -3,6 +3,9 @@ body{
     font-style: "Roboto";
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
     background-color: aquamarine;
     box-sizing: border-box;
     
