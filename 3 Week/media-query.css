@@ -3,14 +3,16 @@
 body{
     font-style: "Roboto";
     background-color: aquamarine;
-  
+    box-sizing: border-box;
+    box-sizing: border-box;
 }
 header, main, footer{
     max-width: 640px;
     text-align: center;
     margin: 1rem, auto;
-    border: (1px solid gray );
+    border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 10px;
+    background-color: #e0f7fa;
 }
 main{
     display: grid;
@@ -19,7 +21,18 @@ main{
 }
 
 section{
-    padding: auto;
-    background-color: aquamarine;
+    padding: 10px;
+    background-color: white;
 }
+}
+
+@media screen and (min-width: 500px) {
+    header {
+      background-color: black;
+      color: white;
+    }
+  
+    main {
+      grid-template-columns: 1fr 1fr;
+    }
 }
