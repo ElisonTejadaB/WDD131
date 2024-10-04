@@ -8,3 +8,26 @@
  --primary-font: Arial, Helvetica,sans-serif;
  --secondary-font: Mooli, san-serif;
  }
+
+
+ body {
+   font-family: var(--primary-font);
+   font-size: 1.2em;
+ }
+ a:link,
+ a:visited {
+   color: var(--accent-color);
+ }
+ header{
+    background-color: var(--primary-color);
+    text-align: center;
+ }
+ img {
+	max-width: 100%;
+   object-fit: cover;
+   width: 750px; 
+   height: 750px;
+}
+ footer{
+   background-color: var(--primary-color);
+ }
