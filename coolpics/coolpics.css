@@ -33,7 +33,7 @@ header h1 {
 
 header nav {
     display: flex;
-    flex-direction: column; /* Make the button and dropdown stack vertically */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
 }
@@ -54,19 +54,19 @@ header nav {
     margin: 0;
     text-align: center;
     display: none; /* Hidden by default */
-    flex-direction: column; /* Ensure the list is stacked vertically */
+    flex-direction: column; 
 }
 
 .dropdown li {
-    display: block; /* Stack items vertically on smaller screens */
-    margin: 10px 0; /* Add vertical spacing between items */
+    display: block; 
+    margin: 10px 0; 
     padding: 5px;
 }
 
 .dropdown li a {
     color: white;
     font-size: 1.5em;
-    /* text-decoration: none; */
+    
 }
 
 .dropdown li a:hover {
@@ -130,7 +130,7 @@ footer {
         display: none; /* Hide menu button on large screens */
     }
     .dropdown {
-        display: flex; /* Show dropdown in row layout */
+        display: flex; 
         justify-content: space-around;
         flex-direction: row;
         width: 80%;
@@ -138,7 +138,7 @@ footer {
     }
     .dropdown li {
         padding: 0;
-        display: inline-block; /* Align items horizontally */
+        display: inline-block; 
     }
 }
 
@@ -153,7 +153,6 @@ footer {
         padding: 0;
         margin: 0;
         text-align: center;
-       /*  display: none;  *//* Hidden by default */
-       flex-direction: row; /* Ensure the list is stacked vertically */
+       flex-direction: row; 
     }
 }
