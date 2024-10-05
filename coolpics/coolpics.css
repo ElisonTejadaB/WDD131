@@ -1,5 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
 
+/* @import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+html {
+  width: 100%;
+}
  :root {
  --primary-color: #52489c;
  --secondary-color: #59c3c3;
@@ -16,25 +19,38 @@
   
  }
  header{
+  display: flex;
   margin: 0 auto;
   padding: 5px;
   background-color: var(--primary-color);
   font-family: var(--primary-font);
+  color: var(--text-light);
  
-
- }
+  
+  }
+  header, h1{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+   
+  }
  .dropdown{
   display: flex;
-/*   justify-content: space-around; */
+  justify-content: space-around;
   gap: 180px;
   list-style: none;
   align-content: center;
+  text-align: center;
   padding-inline-start: 0;
   font-size: 1.6rem;
+  display: inline-block;
+  
  }
  .dropdown li{
   padding: 5px;
-
+  text-decoration: none;
+  
  }
  
  #menu {
@@ -43,14 +59,19 @@
   border: none;
   color: white;
   font-size: 40px;
-}
+ }
+ 
+ 
 nav {
   display: flex;
   justify-content: center;
+ 
 }
  h1 {
   font-family: var(--secondary-font);
+  display: flex;
   justify-content: center;
+ color: var(--text-light);
 }
 
 h2{
@@ -58,22 +79,22 @@ h2{
 }
 .gallery{
   display: grid;
- /*  grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: 1fr; 
   border-radius: 5px;
   padding-left: auto;
   padding-right: auto;
-  /* justify-items: center; */
+
 }
 
  img {
 	width: 250px;
   height: 250px;
- /*  object-fit: cover; */
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
-  }
-  h1, a, p{
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 1); */
+  /* justify-items: center; */
+  /* }
+  p{
     color:var(--text-light);
-  }
+  } 
  
  footer{
    background-color: var(--primary-color);
@@ -81,31 +102,37 @@ h2{
    padding-left: 10%;
    
  }
+ */
 
- @media screen and (min-width: 500px) {
+/* Display screen 500px and hight */
+/*  @media screen and (min-width: 500px) {
   .gallery {
       grid-template-columns: repeat(2, 1fr);
   }
   .dropdown {
       display: none;
   }
-}
-@media screen and (min-width: 900px) {
+} */
+/* Display screen 900px and hight */
+/* @media screen and (min-width: 900px) {
   .gallery {
       grid-template-columns: repeat(3, 1fr);
   }
   #menu {
       display: none;
+     
   }
   .dropdown {
       display: flex;
       justify-content: space-around;
       width: 80%;
       padding: 0;
+    
   }
   .dropdown li {
       display: inline;
       padding: 0;
+    
   }
 }
 @media screen and (min-width: 900px) and (orientation: landscape) {
@@ -114,4 +141,119 @@ h2{
       padding-left: 200px;
       padding-right: 200px;
   }
+} */
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+:root {
+    --primary-color: #52489c;
+    --secondary-color: #59c3c3;
+    --accent-color: #f45b69;
+    --text-dark: #333;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: "Mooli", sans-serif;
+}
+html {
+    width: 100%;
+}
+body {
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    background-color: #ebe7ee;
+    color: var(--text-dark);
+}
+img {
+    display: grid;
+    max-width: 100%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 5px 5px 5px #3d3c44;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+h1 {
+    font-family: var(--secondary-font);
+    display: flex;
+    justify-content: center;
+}
+h2 {
+    font-family: var(--secondary-font);
+    text-align: center;
+    font-size: 1em;
+}
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 40px;
+}
+header a {
+    color: white;
+}
+#menu {
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 40px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+}
+.dropdown {
+    display: inline-block;
+    list-style: none; /*removes bullets from list*/
+    text-align: center;
+    padding: 0;
+}
+.dropdown li {
+    padding: 5px;
+    font-size: 30px
+}
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding-left: 10%;
+}
+@media screen and (min-width: 500px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .dropdown {
+        display: none;
+    }
+}
+@media screen and (min-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #menu {
+        display: none;
+    }
+    .dropdown {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        padding: 0;
+    }
+    .dropdown li {
+        display: inline;
+        padding: 0;
+    }
+}
+@media screen and (min-width: 900px) and (orientation: landscape) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 200px;
+        padding-right: 200px;
+    }
 }
