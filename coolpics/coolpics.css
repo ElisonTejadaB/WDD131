@@ -51,7 +51,7 @@ header nav {
     padding: 0;
     margin: 0;
     text-align: center;
-    display: none; /* Hidden by default */
+    display: none; 
 }
 
 .dropdown li {
@@ -63,7 +63,6 @@ header nav {
 .dropdown li a {
     color: white;
     font-size: 1.5em;
-    text-decoration: none;
 }
 
 .dropdown li a:hover {
