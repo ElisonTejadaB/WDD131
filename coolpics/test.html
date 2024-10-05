@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efectos en Imágenes</title>
+    <style>
+        .imagen {
+            width: 300px;
+            height: 200px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .blur:hover {
+            filter: blur(5px);
+        }
+
+        .grayscale:hover {
+            filter: grayscale(100%);
+        }
+
+        .zoom:hover {
+            transform: scale(1.2);
+        }
+
+        .shadow:hover {
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .rotate:hover {
+            transform: rotate(15deg);
+        }
+    </style>
+</head>
+<body>
+    <img src="imagen.jpg" alt="Ejemplo de Imagen" class="imagen blur">
+    <img src="imagen.jpg" alt="Ejemplo de Imagen" class="imagen grayscale">
+    <img src="imagen.jpg" alt="Ejemplo de Imagen" class="imagen zoom">
+    <img src="imagen.jpg" alt="Ejemplo de Imagen" class="imagen shadow">
+    <img src="imagen.jpg" alt="Ejemplo de Imagen" class="imagen rotate">
+</body>
+</html>
