@@ -23,6 +23,7 @@ header {
     text-align: center;
     padding: 25px;
     font-size: 20px;
+    display: block;
 }
 
 header h1 {
@@ -109,15 +110,21 @@ footer {
 }
 
 /* Responsive Styles */
-@media screen and (min-width: 80px) {
+
+@media screen and (min-width: 100px) {
     .gallery {
-        grid-template-columns: repeat(1fr);
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (min-width: 500px) {
+    .gallery {
+        grid-template-columns: repeat(2,1fr);
     }
 }
 
 @media screen and (min-width: 799px) {
     .gallery {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
     #menu {
         display: none; /* Hide menu button on large screens */
@@ -140,5 +147,13 @@ footer {
         grid-template-columns: repeat(3, 1fr);
         padding-left: 200px;
         padding-right: 200px;
+    }
+    .dropdown {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+       /*  display: none;  *//* Hidden by default */
+       flex-direction: row; /* Ensure the list is stacked vertically */
     }
 }
