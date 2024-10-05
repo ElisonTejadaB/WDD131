@@ -32,6 +32,7 @@ header h1 {
 
 header nav {
     display: flex;
+    flex-direction: column; /* Make the button and dropdown stack vertically */
     justify-content: center;
     align-items: center;
 }
@@ -43,7 +44,7 @@ header nav {
     border: none;
     cursor: pointer;
     padding: 10px 20px;
-    margin-right: 10px;
+    margin-bottom: 10px; /* Add some space between button and dropdown */
 }
 
 .dropdown {
@@ -51,18 +52,20 @@ header nav {
     padding: 0;
     margin: 0;
     text-align: center;
-    display: none; 
+    display: none; /* Hidden by default */
+    flex-direction: column; /* Ensure the list is stacked vertically */
 }
 
 .dropdown li {
-    display: inline-block;
-    margin: 0 10px;
+    display: block; /* Stack items vertically on smaller screens */
+    margin: 10px 0; /* Add vertical spacing between items */
     padding: 5px;
 }
 
 .dropdown li a {
     color: white;
     font-size: 1.5em;
+    /* text-decoration: none; */
 }
 
 .dropdown li a:hover {
@@ -106,27 +109,29 @@ footer {
 }
 
 /* Responsive Styles */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 80px) {
     .gallery {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1fr);
     }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 799px) {
     .gallery {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     #menu {
-        display: none; 
+        display: none; /* Hide menu button on large screens */
     }
     .dropdown {
-        display: flex;
+        display: flex; /* Show dropdown in row layout */
         justify-content: space-around;
+        flex-direction: row;
         width: 80%;
         padding: 0;
     }
     .dropdown li {
         padding: 0;
+        display: inline-block; /* Align items horizontally */
     }
 }
 
