@@ -20,24 +20,34 @@
   padding: 5px;
   background-color: var(--primary-color);
   font-family: var(--primary-font);
-  height: 90%;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+ 
 
  }
  .dropdown{
   display: flex;
-  justify-content: space-around;
+/*   justify-content: space-around; */
   gap: 180px;
   list-style: none;
   align-content: center;
   padding-inline-start: 0;
   font-size: 1.6rem;
  }
+ .dropdown li{
+  padding: 5px;
+
+ }
  
+ #menu {
+  background-color: var(--primary-color);
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 40px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
  h1 {
   font-family: var(--secondary-font);
   justify-content: center;
@@ -48,28 +58,60 @@ h2{
 }
 .gallery{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+ /*  grid-template-columns: 1fr 1fr 1fr; */
   border-radius: 5px;
-  padding-left: 200px;
-  padding-right: 200px;
-  justify-items: center;
+  padding-left: auto;
+  padding-right: auto;
+  /* justify-items: center; */
 }
 
  img {
 	width: 250px;
   height: 250px;
-   object-fit: cover;
-   box-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
+ /*  object-fit: cover; */
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
   }
   h1, a, p{
     color:var(--text-light);
   }
-  footer p{
-    margin-left: 200px;
-
-  }
+ 
  footer{
    background-color: var(--primary-color);
    font-family: var(--secondary-font);
+   padding-left: 10%;
    
  }
+
+ @media screen and (min-width: 500px) {
+  .gallery {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .dropdown {
+      display: none;
+  }
+}
+@media screen and (min-width: 900px) {
+  .gallery {
+      grid-template-columns: repeat(3, 1fr);
+  }
+  #menu {
+      display: none;
+  }
+  .dropdown {
+      display: flex;
+      justify-content: space-around;
+      width: 80%;
+      padding: 0;
+  }
+  .dropdown li {
+      display: inline;
+      padding: 0;
+  }
+}
+@media screen and (min-width: 900px) and (orientation: landscape) {
+  .gallery {
+      grid-template-columns: repeat(3, 1fr);
+      padding-left: 200px;
+      padding-right: 200px;
+  }
+}
