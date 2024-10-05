@@ -155,4 +155,8 @@ footer {
         text-align: center;
        flex-direction: row; 
     }
+    .dropdown li {
+        padding: 0;
+        display: block; 
+    }
 }
