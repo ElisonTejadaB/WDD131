@@ -19,28 +19,24 @@
   background-color: var(--primary-color);
   font-family: var(--primary-font);
   height: 90%;
-  text-align: center;
   display: flex;
- }
- nav ul{
-  margin: 0;
-  padding: 20px;
-  text-align: center;
- }
- nav ul a{
-  padding: 10px 15 px;
-  transition: background-color 0.3s;
- }
-
- h1 {
-  font-family: var(--secondary-font);
-  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 
+ }
+ nav, ul{
+  display: flex;
+  justify-content: space-around;
+  gap: 100px;
+ }
+ 
+ h1 {
+  font-family: var(--secondary-font);
+  justify-content: center;
 }
-nav ul a:hover {
-  background-color: #ddd; /* Color de fondo al pasar el ratón */
-}
+
 h2{
   text-align: center;
 }
