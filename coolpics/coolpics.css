@@ -22,8 +22,6 @@ header {
     color: white;
     text-align: center;
     padding: 25px;
-    font-size: 20px;
-    display: block;
 }
 
 header h1 {
@@ -45,7 +43,7 @@ header nav {
     border: none;
     cursor: pointer;
     padding: 10px 20px;
-    margin-bottom: 10px; /* Add some space between button and dropdown */
+    margin-bottom: 10px;
 }
 
 .dropdown {
@@ -58,15 +56,12 @@ header nav {
 }
 
 .dropdown li {
-    display: block; 
     margin: 10px 0; 
-    padding: 5px;
 }
 
 .dropdown li a {
     color: white;
     font-size: 1.5em;
-    
 }
 
 .dropdown li a:hover {
@@ -110,15 +105,9 @@ footer {
 }
 
 /* Responsive Styles */
-
-@media screen and (min-width: 100px) {
-    .gallery {
-        grid-template-columns: repeat(1,1fr);
-    }
-}
 @media screen and (min-width: 500px) {
     .gallery {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -134,11 +123,6 @@ footer {
         justify-content: space-around;
         flex-direction: row;
         width: 80%;
-        padding: 0;
-    }
-    .dropdown li {
-        padding: 0;
-        display: inline-block; 
     }
 }
 
@@ -147,16 +131,5 @@ footer {
         grid-template-columns: repeat(3, 1fr);
         padding-left: 200px;
         padding-right: 200px;
-    }
-    .dropdown {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        text-align: center;
-       flex-direction: row; 
-    }
-    .dropdown li {
-        padding: 0;
-        display: block; 
     }
 }

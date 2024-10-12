@@ -6,60 +6,58 @@
     <title>Cool Pics</title>
     <link type="text/css" rel="stylesheet" href="./coolpics.css">
     <script src="./coolpics.js" defer></script>
-   
 </head>
 <body>
     <header>
         <h1>Cool Pics 📷</h1>
         <nav>
-            <button id="menu">Menu</button>
-            <ul class="dropdown">
-                <li><a href="">Home</a></li>
-                <li><a href="">People</a></li>
-                <li><a href="">Places</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
+            <button id="menu" aria-haspopup="true" aria-expanded="false">Menu</button>
+            <ul class="dropdown" role="menu" aria-hidden="true">
+                <li><a href="#" role="menuitem">Home</a></li>
+                <li><a href="#" role="menuitem">People</a></li>
+                <li><a href="#" role="menuitem">Places</a></li>
+                <li><a href="#" role="menuitem">About</a></li>
+                <li><a href="#" role="menuitem">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <h2>Current Work</h2>
-        <section class="gallery">
+        <section class="gallery" role="group" aria-label="Image Gallery">
             <figure>  
-                <img src="./norris-sm.jpeg" alt="picture">
+                <img src="./norris-sm.jpeg" alt="Small Image" onclick="viewHandler(event)">
             </figure>
             <figure>  
-                <img src="./norris-sm.jpeg" alt="picture">
+                <img src="./norris-sm.jpeg" alt="Small Image" onclick="viewHandler(event)">
             </figure>
             <figure>  
-                <img src="./norris-sm.jpeg" alt="picture">
+                <img src="./norris-sm.jpeg" alt="Small Image" onclick="viewHandler(event)">
             </figure>
             <figure>  
-                <img src="./norris-sm.jpeg" alt="picture">
+                <img src="./norris-sm.jpeg" alt="Small Image" onclick="viewHandler(event)">
             </figure>
             <figure>  
-                <img src="./norris-sm.jpeg" alt="picture">
+                <img src="./norris-sm.jpeg" alt="Small Image" onclick="viewHandler(event)">
             </figure>
             <figure>  
-                <img src="./norris-sm.jpeg" alt="picture">
+                <img src="./norris-sm.jpeg" alt="Small Image" onclick="viewHandler(event)">
             </figure>
             <figure>  
-                <img src="./norris-sm.jpeg" alt="picture">
+                <img src="./norris-sm.jpeg" alt="Small Image" onclick="viewHandler(event)">
             </figure>
             <figure>  
-                <img src="./norris-sm.jpeg" alt="picture">
+                <img src="./norris-sm.jpeg" alt="Small Image" onclick="viewHandler(event)">
             </figure>
             <figure>  
-                <img src="./norris-sm.jpeg" alt="picture">
+                <img src="./norris-sm.jpeg" alt="Small Image" onclick="viewHandler(event)">
             </figure>
+       
         </section>
     </main>
 
     <footer>
         <p>©2023 Not a real site 😀</p>
     </footer>
-
-    
 </body>
 </html>
