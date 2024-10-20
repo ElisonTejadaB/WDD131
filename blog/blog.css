@@ -1,0 +1,33 @@
+.skiptocontent a{
+    position: absolute;
+    top: -40px;
+    background-color: #EFC69B;
+}
+.skiptocontent a:focus{
+    left: 0;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 0.04fr 0.04fr 0.04fr;
+    justify-content: flex-end; 
+    
+}
+
+.menu ul {
+    padding: 0; 
+    margin: 0; 
+    display: contents; 
+}
+
+.menu li {
+    text-align: left; 
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none; 
+    color: #333; 
+    padding: 10px 0;
+    display: block; 
+}
