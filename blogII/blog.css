@@ -1,4 +1,4 @@
-.skiptocontent a{
+ .skiptocontent a{
     position: absolute;
     top: -40px;
     background-color: #EFC69B;
@@ -33,7 +33,7 @@
 }
 
 /* Main Content Styles */
-main {
+ main {
     padding: 20px;
 }
 
@@ -53,5 +53,22 @@ main {
 .filter-box {
     background-color: #fff;
     padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+}
+ 
+
+.skiptocontent a {
+    position: absolute; /* Set absolute positioning */
+    left: -9999px; /* Move it off-screen */
+    background-color: #AF1B3F; /* Red color to stand out */
+    color: #FFFFFF; /* White text color */
+    padding: 10px 15px; /* Some padding for a better click area */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Optional: rounded corners */
+    transition: left 0.3s ease; /* Smooth transition when moving */
+}
+
+.skiptocontent a:focus {
+    left: 10px; /* Move it back on-screen when focused */
+    z-index: 1000; /* Ensure it's above other content */
 }
