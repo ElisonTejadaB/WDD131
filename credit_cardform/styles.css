@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,300);
+
+body {
+    background-color: #ffb242;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for front and back */
+    gap: 10px;
+    width: 500px;
+    position: relative;
+}
+
+.card {
+    position: relative;
+    background-color: #498ee4;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+#card-back {
+    z-index: 0; /* Lower z-index to ensure it's behind the card front */
+}
+
+#card-front {
+    z-index: 1; /* Higher z-index for the front card */
+}
+
+input {
+    border: none;
+    outline: none;
+    background-color: #5a9def;
+    height: 30px;
+    padding: 0 10px;
+    margin: 0 0 25px;
+    color: white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+input.invalid {
+    border: solid 2px #eb0000;
+}
+
+.hidden {
+    display: none;
+}
+
+#card-btn {
+    background-color: rgba(251, 251, 251, 0.8);
+    color: #ffb242;
+    width: 150px;
+    border-radius: 8px;
+    height: 42px;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#form-errors, #card-success {
+    background-color: white;
+    color: black;
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#form-errors i, #card-success i {
+    margin-right: 5px;
+}
+
+#exp-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#cvc-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
