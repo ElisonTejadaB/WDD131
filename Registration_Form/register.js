@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
   }
 
-  // Add event listener to "Add Participant" button
+  // "Add Participant" button
   addButton.addEventListener("click", function () {
     participantCount++; // Increment the participant count
 
@@ -58,12 +58,10 @@ document.addEventListener("DOMContentLoaded", function () {
     addButton.insertAdjacentHTML("beforebegin", newParticipantHTML);
   });
 
-  // Function to calculate the total fee
+  //Calculate the total fee
   function totalFees() {
-    // The selector below grabs any element with an id starting with "fee"
     let feeElements = document.querySelectorAll("[id^=fee]");
     
-    // Convert NodeList to an array
     feeElements = [...feeElements];
 
     // Calculate the total fee using reduce()
@@ -75,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
     return total;
   }
 
-  // Function to create success message template
+  //Success message template
   function successTemplate(info) {
     return `
       <h2>Registration Successful!</h2>
@@ -85,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
   }
 
-  // Function to handle form submission
+  // Form submission
   function submitForm(event) {
     event.preventDefault(); // Prevent the default form submission behavior
 
@@ -104,10 +102,8 @@ document.addEventListener("DOMContentLoaded", function () {
       totalFee
     });
 
-    // Optionally, hide the "Add Participant" button after form submission
     addButton.style.display = "none";
   }
-
   // Add event listener to form submit button
   form.addEventListener("submit", submitForm);
 });
