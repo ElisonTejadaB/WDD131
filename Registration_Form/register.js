@@ -79,9 +79,9 @@ document.addEventListener("DOMContentLoaded", function () {
   function successTemplate(info) {
     return `
       <h2>Registration Successful!</h2>
-      <p>Adult Name: ${info.adultName}</p>
-      <p>Number of Participants: ${info.numParticipants}</p>
-      <p>Total Fee: $${info.totalFee.toFixed(2)}</p>
+      <p>Thank you: ${info.adultName} for registering</p>
+      <p>You have registered: ${info.numParticipants} Participants</p>
+      <p>Your total Fee is: $${info.totalFee.toFixed(2)}</p>
     `;
   }
 
