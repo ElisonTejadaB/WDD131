@@ -72,6 +72,7 @@ main {
     justify-items: center; /* Centers the items within their columns */
 }
 
+.recipes 
 footer {
   background-color: var(--text-dark);
   color: var(--text-light);
