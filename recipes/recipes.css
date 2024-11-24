@@ -1,0 +1,158 @@
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+
+/* Root Variables */
+:root {
+  --primary-color: #1B98E0;
+  --secondary-color: #59c3c3;
+  --text-dark: #333;
+  --text-light: #ebebeb;
+  --primary-font: Arial, Helvetica, sans-serif;
+  --secondary-font: "Amatic SC";
+}
+
+/* General styles */
+body {
+  margin: 0;
+  font-family: var(--primary-font);
+  color: var(--text-dark);
+  background-color: #f9f9f9;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+
+header img {
+  width: 100px;
+  height: 100px;
+}
+
+h1 {
+  margin-left: 20px;
+  font-family: var(--secondary-font);
+  font-size: 2rem;
+}
+
+main {
+  padding: 20px;
+}
+
+.search-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: var(--primary-font);
+}
+
+.search-form button {
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: var(--text-light);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--primary-font);
+}
+
+footer {
+  background-color: var(--text-dark);
+  color: var(--text-light);
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  font-size: 0.6em;
+  margin: 0.5rem 0;
+  color: var(--text-light);
+}
+
+a {
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+footer .social {
+  margin-top: 1rem;
+}
+
+footer .social a {
+  margin: 0 0.5rem;
+  display: inline-block;
+}
+
+footer .social img {
+  height: 24px;
+  width: 24px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Styles */
+
+/* Media queries for tablets and up (min-width: 768px) */
+@media (min-width: 768px) {
+  header {
+    padding: 30px 0;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .search-form input {
+    font-size: 16px;
+  }
+
+  .recipes {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
+
+/* Media queries for cell phones (max-width: 767px) */
+@media (max-width: 767px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header img {
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .search-form {
+    flex-wrap: wrap;
+  }
+
+  .search-form input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .recipes {
+    grid-template-columns: 1fr;
+  }
+}

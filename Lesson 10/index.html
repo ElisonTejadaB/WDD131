@@ -1,0 +1,32 @@
+<!-- sorting.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Search List</title>
+</head>
+<body>
+    <h1>Search List</h1>
+    <input type="text" id="list" placeholder="Enter items (comma-separated)">
+    <input type="text" id="query" placeholder="Enter search query">
+    <button onclick="performSearch()">Search</button>
+    <p id="result">Results will appear here.</p>
+
+    <script>
+        function searchList(list, query) {
+            return list.filter(item => item.toLowerCase().includes(query.toLowerCase()));
+        }
+
+        function performSearch() {
+            const list = document.getElementById('list').value.split(',').map(item => item.trim());
+            const query = document.getElementById('query').value;
+            const results = searchList(list, query);
+            document.getElementById('result').textContent = results.length 
+                ? `Matching items: ${results.join(', ')}`
+                : 'No matching items found.';
+        }
+    </script>
+</body>
+</html>
+
