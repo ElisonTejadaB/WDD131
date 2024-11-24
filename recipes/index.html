@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Book</title>
     <link rel="stylesheet" href="./recipes.css">
-    <!-- Solo se necesita un script type="module" para cargar el JavaScript principal -->
+    <!-- script is needed to load the js and mjs -->
     <script type="module" src="./main.js"></script>
     <script type="module" src="./recipes.mjs"></script>
 </head>
@@ -15,15 +15,15 @@
         <h1>Recipe Book</h1>
     </header>
     <main>
-        <!-- Formulario de búsqueda -->
+        <!-- Form search -->
         <form class="search-form">
             <input id="search-input" type="text" placeholder="Search for recipes..." aria-label="Search for recipes">
             <button id="search-btn" type="submit">Search</button>
         </form>
         
-        <!-- Sección de recetas -->
+        <!-- Section recipes -->
         <section class="recipes">
-            <!-- Aquí se cargarán dinámicamente las recetas -->
+            <!-- loading the recipes -->
         </section>
         <section class="recipes" id="default-recipe">
             <!-- Default recipe will be rendered here -->
