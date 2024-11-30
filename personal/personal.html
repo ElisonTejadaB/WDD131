@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Desk - Registrar Caso</title>
+    <link rel="stylesheet" href="./personal.css">
+    
+    <script src="personal.js"></script>
+    
+</head>
+<body>
+    <header>
+        <h1>Help Desk</h1>
+        <nav>
+            <ul>
+                <li><a href="./personal.html">Registrar Caso</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Registrar Caso</h2>
+            <form id="caseForm">
+                <div class="form-group">
+                    <label for="firstName">Nombres:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Apellidos:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Teléfono:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="department">Departamento:</label>
+                    <input type="text" id="department" name="department" required>
+                </div>
+                <div class="form-group">
+                    <label for="equipment">Equipo Informático:</label>
+                    <select id="equipment" name="equipment" required>
+                        <option value="pc">PC</option>
+                        <option value="laptop">Laptop</option>
+                        <option value="printer">Impresora</option>
+                        <!-- Agrega más opciones según sea necesario -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="issue">Tipo de Caso:</label>
+                    <select id="issue" name="issue" required>
+                        <option value="software">Software</option>
+                        <option value="hardware">Hardware</option>
+                        <!-- Agrega más opciones según sea necesario -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="details">Detalle del Problema:</label>
+                    <textarea id="details" name="details" required></textarea>
+                </div>
+                <button type="submit">Registrar Caso</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Help Desk. Todos los derechos reservados.</p>
+    </footer>
+   
+</body>
+</html>

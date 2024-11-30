@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Desk - Estado de Solicitud</title>
+    <link rel="stylesheet" href="./personal.css">
+    <script src="./personal.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Help Desk</h1>
+        <nav>
+            <ul>
+                <li><a href="./personal.html">Registrar Caso</a></li>
+                <li><a href="./persona-status.html">Estado de Solicitud</a></li>
+                <li><a href="./personal-detalles.html">Detalle del Caso</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Estado de Solicitud</h2>
+            <form id="statusForm">
+                <div class="form-group">
+                    <label for="caseId">ID del Caso:</label>
+                    <input type="text" id="caseId" name="caseId" required>
+                </div>
+                <button type="submit">Verificar Estado</button>
+            </form>
+            <div id="statusResult"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Help Desk. Todos los derechos reservados.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
