@@ -67,12 +67,18 @@ main {
 }
 .recipes {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Corrected the commas */
+    grid-template-columns: 1fr 1fr; 
+   /*  grid-template-rows: 1fr,1fr; */
     gap: 2rem; /* Optional: Adds space between the grid items */
     justify-items: center; /* Centers the items within their columns */
 }
 
-.recipes 
+.recipes p, .recipes h3, .recipes ul, .recipes ol {
+    display: grid;
+    grid-column: 1 / span 2; /* Adjusted to properly span two columns */
+    gap: 1rem; /* Optional: Adds space between grid items */
+}
+
 footer {
   background-color: var(--text-dark);
   color: var(--text-light);
