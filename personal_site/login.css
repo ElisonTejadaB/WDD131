@@ -1,4 +1,4 @@
-/* Reset some basic styles */
+
 body, h2, label, input, button, div, footer, p {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@ body, h2, label, input, button, div, footer, p {
 
 body {
     font-family: 'Lato', 'Roboto', sans-serif;
-    background-color: #ffffff; /* Updated background color */
+    background-color: #ffffff; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,14 +21,14 @@ body {
 }
 
 .logo-image {
-    width: 200px; /* Updated width */
+    width: 200px; 
     height: auto;
 }
 
 .login-container {
     width: 300px;
     padding: 20px;
-    background-color: #f4f4f4; /* Updated background color */
+    background-color: #f4f4f4; 
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -66,7 +66,7 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(9, 59, 223, 0.932); /* Updated box-shadow */
+    box-shadow: 0 4px 8px rgba(9, 59, 223, 0.932); 
     transition: background-color 0.2s;
 }
 

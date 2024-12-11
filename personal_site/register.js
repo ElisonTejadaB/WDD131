@@ -9,10 +9,6 @@ document.addEventListener("DOMContentLoaded", function() {
     technicianLogin.addEventListener("click", function() {
         window.location.href = "technician.html";
     });
-
-
-
-
     
 });
 
@@ -67,19 +63,19 @@ document.getElementById("incidentForm").addEventListener("submit", function(even
         return;
     }
 
-    // Simulates submission and shows a message
-    alert("Incident has been recorded successfully!\n" +
+    // Simulates submission and shows a message -- working in that
+   /*  alert("Incident has been recorded successfully!\n" +
         `Reporter: ${reporterName}\n` +
         `Email: ${contactEmail}\n` +
         `Title: ${incidentTitle}\n` +
         `Priority: ${priority}\n` +
         `Impact: ${impact}\n` +
         `Affected Service: ${service}\n` +
-        `Date/Time: ${dateTime}`);
+        `Date/Time: ${dateTime}`); */
 });
 
 /* ********************************************************************************************************************** */
-    // Example incidents (replace with backend integration later)
+    // Example incidents (replace with backend integration later) -- working in that
 const incidents = [
     { id: 1, title: "Email Down", priority: "High", impact: "Critical", status: "Open" },
     { id: 2, title: "Network Issue", priority: "Medium", impact: "Significant", status: "In Progress" },
@@ -89,7 +85,7 @@ const incidents = [
 // Populate the incident table
 const incidentTableBody = document.querySelector("#incidentTable tbody");
 function populateIncidentTable() {
-    incidentTableBody.innerHTML = ""; // Clear existing rows
+    incidentTableBody.innerHTML = ""; 
     incidents.forEach((incident) => {
         const row = document.createElement("tr");
         row.innerHTML = `
@@ -112,7 +108,7 @@ document.addEventListener("click", (event) => {
         const incident = incidents.find((inc) => inc.id == incidentId);
         if (incident) {
             document.getElementById("incidentId").value = incident.id;
-            document.getElementById("solutionDescription").value = ""; // Clear previous solution
+            document.getElementById("solutionDescription").value = ""; 
             document.getElementById("statusCheckbox").checked = incident.status === "Closed";
         }
     }
