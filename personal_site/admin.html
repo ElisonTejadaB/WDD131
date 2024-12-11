@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technician Dashboard</title>
+    <link rel="stylesheet" href="technician.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Technician Dashboard</h1>
+
+        <!-- Incident List -->
+        <section>
+            <h2>Logged Incidents</h2>
+            <table id="incidentTable">
+                <thead>
+                    <tr>
+                        <th>Incident ID</th>
+                        <th>Title</th>
+                        <th>Priority</th>
+                        <th>Impact</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be dynamically populated -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Solution Reporting -->
+        <section>
+            <h2>Report Solution</h2>
+            <form id="solutionForm">
+                <label for="incidentId">Incident ID</label>
+                <input type="text" id="incidentId" name="incidentId" readonly placeholder="Select an incident to populate">
+
+                <label for="solutionDescription">Solution Description</label>
+                <textarea id="solutionDescription" name="solutionDescription" rows="5" placeholder="Enter the solution for the incident" required></textarea>
+
+                <!-- Status Checkbox -->
+                <label for="statusCheckbox">
+                    Mark as Closed <input type="checkbox" id="statusCheckbox" name="statusCheckbox"> 
+                </label>
+
+                <button type="submit">Submit Solution</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="technician.js"></script>
+</body>
+</html>

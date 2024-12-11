@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incident Recording Form</title>
+    <link rel="stylesheet" href="./incident.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Incident Recording Form</h1>
+        <form id="incidentForm">
+            <!-- Contact Information -->
+            <label for="reporterName">Reporter Name</label>
+            <input type="text" id="reporterName" name="reporterName" required placeholder="Enter your name">
+
+            <label for="contactEmail">Contact Email</label>
+            <input type="email" id="contactEmail" name="contactEmail" required placeholder="Enter your email">
+
+            <!-- Incident Details -->
+            <label for="incidentTitle">Incident Title</label>
+            <input type="text" id="incidentTitle" name="incidentTitle" required placeholder="Short description of the issue">
+
+            <label for="incidentDescription">Incident Description</label>
+            <textarea id="incidentDescription" name="incidentDescription" rows="5" required placeholder="Provide a detailed description of the issue"></textarea>
+
+            <!-- Priority -->
+            <label for="priority">Priority <span class="priority-high">(High/Medium/Low)</span></label>
+            <select id="priority" name="priority" required>
+                <option value="" disabled selected>Select Priority</option>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+
+            <!-- Impact -->
+            <label for="impact">Impact</label>
+            <select id="impact" name="impact" required>
+                <option value="" disabled selected>Select Impact</option>
+                <option value="Critical">Critical</option>
+                <option value="Significant">Significant</option>
+                <option value="Minor">Minor</option>
+            </select>
+
+            <!-- Affected Service -->
+            <label for="service">Affected Service</label>
+            <input type="text" id="service" name="service" required placeholder="E.g., Email, Network, Database">
+
+            <!-- Date/Time -->
+            <label for="dateTime">Date/Time of Incident</label>
+            <input type="datetime-local" id="dateTime" name="dateTime" required>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Incident</button>
+        </form>
+    </div>
+
+    <script src="incident.js"></script>
+</body>
+</html>

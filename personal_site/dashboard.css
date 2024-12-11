@@ -1,0 +1,28 @@
+/* Reset some basic styles */
+body, h1, p, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.dashboard-container {
+    text-align: center;
+}
+
+.dashboard-container h1 {
+    color: #243C94;
+    margin-bottom: 20px;
+}
+
+.dashboard-container p {
+    color: #333333;
+}

@@ -1,0 +1,91 @@
+/* Reset some basic styles */
+body, h2, label, input, button, div, footer, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', 'Roboto', sans-serif;
+    background-color: #ffffff; /* Updated background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.logo-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.logo-image {
+    width: 200px; /* Updated width */
+    height: auto;
+}
+
+.login-container {
+    width: 300px;
+    padding: 20px;
+    background-color: #f4f4f4; /* Updated background color */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: 2px solid #243C94;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #243C94;
+    font-size: 1.8em;
+}
+
+.login-container label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333333;
+    text-align: left;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #243C94;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(9, 59, 223, 0.932); /* Updated box-shadow */
+    transition: background-color 0.2s;
+}
+
+.login-container button:hover {
+    background-color: #1a2e73;
+    box-shadow: 0 8px 16px rgba(9, 59, 223, 0.932);
+}
+
+footer {
+    margin-top: auto;
+    padding: 10px 0;
+    background-color: #243C94;
+    color: white;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
