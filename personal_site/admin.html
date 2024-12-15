@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technician Dashboard</title>
-    <link rel="stylesheet" href="technician.css">
+    <link rel="stylesheet" href="./admin.css">
     <script src="technician.js"></script>
 </head>
 <body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./technician.html">Support</a></li>
+            <li><a href="./user.html">User</a></li>
+        </ul>
+    </nav>
+    
     <div class="dashboard-container">
-        <h1>Technician Dashboard</h1>
+        <img src="./images/logo.jpg" alt="Company Logo" class="logo-image">
+            <h1>Technician Dashboard</h1>
 
-        <!-- Incident List -->
+        <!-- Incident List  AN EXAMPLE-->
         <section>
             <h2>Logged Incidents</h2>
             <table id="incidentTable">
@@ -26,10 +35,43 @@
                     </tr>
                 </thead>
                 <tbody>
-                    
+                    <tr>
+                        <td>INC-1234</td>
+                        <td>Network Outage in Main Office</td>
+                        <td>High</td>
+                        <td>Critical</td>
+                        <td>Open</td>
+                        <td><button>View Details</button></td>
+                    </tr>
+                    <tr>
+                        <td>INC-5678</td>
+                        <td>Server Room Overheating</td>
+                        <td>Medium</td>
+                        <td>Significant</td>
+                        <td>In Progress</td>
+                        <td><button>View Details</button></td>
+                    </tr>
+                    <tr>
+                        <td>INC-9012</td>
+                        <td>Slow Database Response Times</td>
+                        <td>Low</td>
+                        <td>Minor</td>
+                        <td>Closed</td>
+                        <td><button>View Details</button></td>
+                    </tr>
+                    <tr>
+                        <td>INC-3456</td>
+                        <td>User Account Locked Out</td>
+                        <td>Medium</td>
+                        <td>Minor</td>
+                        <td>Open</td>
+                        <td><button>View Details</button></td>
+                    </tr>
                 </tbody>
             </table>
         </section>
+
+        <!--END -->
 
         <!-- Solution Reporting -->
         <section>

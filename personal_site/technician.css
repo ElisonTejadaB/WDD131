@@ -13,6 +13,16 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.logo-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.logo-image {
+    width: 200px; 
+    height: auto;
+}
 
 h1, h2 {
     text-align: center;
@@ -65,4 +75,38 @@ form button {
 
 form button:hover {
     background-color: #0056b3;
+}
+
+.navbar {
+    background-color: #333; 
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    padding: 10px 20px; 
+    background-color: #243C94;
+   
+}
+
+.nav-links {
+    list-style: none; 
+    display: flex; 
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px; 
+}
+
+.nav-links a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 16px; 
+    padding: 8px 15px; 
+    transition: background-color 0.3s ease; 
+}
+
+.nav-links a:hover {
+    background-color: #575757; 
+    border-radius: 5px; 
 }
