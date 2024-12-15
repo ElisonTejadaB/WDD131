@@ -43,20 +43,5 @@ document.getElementById("incidentForm").addEventListener("submit", function(even
         <p><strong>Date/Time:</strong> ${dateTime}</p>
     `);
   
-    // Alternatively, you can store the data in local storage or send it to a server:
-    // localStorage.setItem('incidentData', JSON.stringify({
-    //   reporterName, contactEmail, incidentTitle, incidentDescription, priority, impact, service, dateTime
-    // }));
-  
-    // Or, you can send it to a server using AJAX or Fetch API:
-    // fetch('/your-server-endpoint', {
-    //   method: 'POST',
-    //   body: JSON.stringify({
-    //     reporterName, contactEmail, incidentTitle, incidentDescription, priority, impact, service, dateTime
-    //   })
-    // })
-    // .then(response => response.json())
-    // .then(data => {
-    //   // Handle server response
-    // });
+   
   });

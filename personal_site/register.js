@@ -63,15 +63,6 @@ document.getElementById("incidentForm").addEventListener("submit", function(even
         return;
     }
 
-    // Simulates submission and shows a message -- working in that
-   /*  alert("Incident has been recorded successfully!\n" +
-        `Reporter: ${reporterName}\n` +
-        `Email: ${contactEmail}\n` +
-        `Title: ${incidentTitle}\n` +
-        `Priority: ${priority}\n` +
-        `Impact: ${impact}\n` +
-        `Affected Service: ${service}\n` +
-        `Date/Time: ${dateTime}`); */
 });
 
 /* ********************************************************************************************************************** */
@@ -132,7 +123,7 @@ document.getElementById("solutionForm").addEventListener("submit", function (eve
         return;
     }
 
-    // Simulate updating the incident (replace with backend integration)
+    // Simulate updating the incident (replace with backend integration) Workinggggggggg!!!!!
     const incident = incidents.find((inc) => inc.id == incidentId);
     if (incident) {
         incident.status = isClosed ? "Closed" : "Open";
@@ -169,20 +160,4 @@ document.getElementById("incidentForm").addEventListener("submit", function(even
       <p><strong>Date/Time:</strong> ${dateTime}</p>
     `);
   
-    // Alternatively, you can store the data in local storage or send it to a server:
-    // localStorage.setItem('incidentData', JSON.stringify({
-    //   reporterName, contactEmail, incidentTitle, incidentDescription, priority, impact, service, dateTime
-    // }));
-  
-    // Or, you can send it to a server using AJAX or Fetch API:
-    // fetch('/your-server-endpoint', {
-    //   method: 'POST',
-    //   body: JSON.stringify({
-    //     reporterName, contactEmail, incidentTitle, incidentDescription, priority, impact, service, dateTime
-    //   })
-    // })
-    // .then(response => response.json())
-    // .then(data => {
-    //   // Handle server response
-    // });
-  });
+});

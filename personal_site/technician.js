@@ -5,15 +5,15 @@
     const target = event.target;
 
     if (target.tagName === 'TD') {
-      // Select the entire row
+      
       const row = target.parentNode;
       row.classList.toggle('selected');
 
-      // Get the checkbox in the row
+     
       const checkbox = row.querySelector('input[type="checkbox"]');
 
-      // Update the status based on checkbox state
-      const statusCell = row.cells[4]; // Assuming status is in the 5th column
+      
+      const statusCell = row.cells[4]; 
       const status = checkbox.checked ? 'Closed' : 'Open';
       statusCell.textContent = status;
     }
@@ -26,9 +26,9 @@
   
       if (target.tagName === 'TD') {
           const row = target.parentNode;
-          const incidentId = row.cells[1].textContent; // Assuming incident ID is in the second column
+          const incidentId = row.cells[1].textContent; 
   
           incidentIdInput.value = incidentId;
-          // Optionally, you can style the selected row or remove the selection on a new click
+          
       }
   });
